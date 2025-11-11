@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Minimalist IT Portfolio ? Projects, Skills, and Contact." />
+    <title>Minimalist IT Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="icon" type="image/svg+xml" href="/assets/img/logo.svg" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Mobile Navigation Overlay -->
+    <div id="mobile-nav" class="mobile-nav" aria-hidden="true">
+      <nav class="mobile-nav__panel" aria-label="Mobile">
+        <button class="icon-btn mobile-nav__close" aria-label="Close menu" data-close-overlay>&times;</button>
+        <a href="#hero" class="mobile-nav__link" data-navlink>Home</a>
+        <a href="#about" class="mobile-nav__link" data-navlink>About</a>
+        <a href="#projects" class="mobile-nav__link" data-navlink>Projects</a>
+        <a href="#skills" class="mobile-nav__link" data-navlink>Skills</a>
+        <a href="#contact" class="mobile-nav__link" data-navlink>Contact</a>
+        <a href="#contact" class="btn btn--primary mobile-nav__cta" data-navlink>Let?s Talk</a>
+      </nav>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header" id="header">
+      <div class="container header__inner">
+        <a href="#hero" class="brand" aria-label="Go to home">
+          <img src="/assets/img/logo.svg" alt="Brand logo" class="brand__logo" />
+          <span class="brand__text">IT Portfolio</span>
+        </a>
+
+        <nav class="primary-nav" aria-label="Primary">
+          <a href="#about" class="primary-nav__link">About</a>
+          <a href="#projects" class="primary-nav__link">Projects</a>
+          <a href="#skills" class="primary-nav__link">Skills</a>
+          <a href="#contact" class="primary-nav__link">Contact</a>
+        </nav>
+
+        <a href="#contact" class="btn btn--primary header__cta">Contact</a>
+
+        <button class="icon-btn header__menu" aria-controls="mobile-nav" aria-expanded="false" aria-label="Open menu">
+          <span class="menu-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main" class="site-main">
+      <!-- Hero -->
+      <section id="hero" class="section hero" aria-label="Hero">
+        <div class="container">
+          <p class="eyebrow">Minimalist IT Portfolio</p>
+          <h1 class="hero__title">Designer of resilient systems and clean code.</h1>
+          <p class="hero__subtitle">I build dependable, human?centered software with a focus on performance, accessibility, and maintainability.</p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">View Projects</a>
+            <a href="#contact" class="btn btn--ghost">Get in touch</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section about" aria-label="About">
+        <div class="container grid grid--2">
+          <div>
+            <h2>About</h2>
+            <p>I?m an IT professional focused on scalable architecture, secure cloud deployments, and delightful developer experiences. I value clarity over complexity and outcomes over output.</p>
+            <ul class="list check-list">
+              <li>Cloud: AWS, Vercel, Docker</li>
+              <li>Web: React, Next.js, TypeScript</li>
+              <li>Ops: CI/CD, Observability, IaC</li>
+            </ul>
+          </div>
+          <div class="about__card">
+            <div class="stat">
+              <span class="stat__num">8+</span>
+              <span class="stat__label">years experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">50+</span>
+              <span class="stat__label">projects shipped</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">100%</span>
+              <span class="stat__label">a11y focused</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects" aria-label="Projects">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="grid grid--3 cards">
+            <article class="card">
+              <div class="card__media" role="img" aria-label="Serverless monitoring dashboard preview"></div>
+              <div class="card__body">
+                <h3 class="card__title">Serverless Monitoring</h3>
+                <p class="card__text">Metrics pipeline with near?real?time dashboards, 99.9% uptime.</p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card__media" role="img" aria-label="E?commerce storefront preview"></div>
+              <div class="card__body">
+                <h3 class="card__title">Commerce Starter</h3>
+                <p class="card__text">Edge?rendered storefront with cart, auth, and analytics.</p>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card__media" role="img" aria-label="DevEx CLI tool preview"></div>
+              <div class="card__body">
+                <h3 class="card__title">DX Toolkit</h3>
+                <p class="card__text">Productivity CLI and templates for fast, reliable delivery.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section skills" aria-label="Skills">
+        <div class="container">
+          <h2>Skills</h2>
+          <ul class="skills__list">
+            <li class="chip">TypeScript</li>
+            <li class="chip">React</li>
+            <li class="chip">Next.js</li>
+            <li class="chip">Node.js</li>
+            <li class="chip">AWS</li>
+            <li class="chip">Docker</li>
+            <li class="chip">PostgreSQL</li>
+            <li class="chip">CI/CD</li>
+            <li class="chip">Testing</li>
+            <li class="chip">Accessibility</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section contact" aria-label="Contact">
+        <div class="container grid grid--2">
+          <div>
+            <h2>Contact</h2>
+            <p>Have a project or role in mind? I?d love to hear from you.</p>
+            <a class="btn btn--primary" href="mailto:hello@example.com" rel="noopener">Email me</a>
+          </div>
+          <form class="contact__form" aria-label="Contact form" action="mailto:hello@example.com" method="post" enctype="text/plain">
+            <label class="field">
+              <span>Name</span>
+              <input type="text" name="name" required autocomplete="name" />
+            </label>
+            <label class="field">
+              <span>Email</span>
+              <input type="email" name="email" required autocomplete="email" />
+            </label>
+            <label class="field">
+              <span>Message</span>
+              <textarea name="message" rows="4" required></textarea>
+            </label>
+            <button type="submit" class="btn btn--ghost">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" aria-label="Footer">
+      <div class="container footer__inner">
+        <p>&copy; <span id="year"></span> Minimalist IT Portfolio</p>
+        <a href="#hero" class="backtotop">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="/assets/js/script.js" defer></script>
+  </body>
+</html>
